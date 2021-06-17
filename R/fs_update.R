@@ -17,7 +17,7 @@
 #' @param ... curl options
 #' @return output of PUT request (invisibly)
 #' @seealso [fs_auth()], [fs_add_tags()]
-#' @references http://api.figshare.com
+#' @references https://api.figshare.com
 #' @details Updates the title, description, and type of an article.
 #' @examples \dontrun{
 #' # set your auth token, see ?fs_auth for more info
@@ -39,7 +39,7 @@ function(article_id, title = NA, description = NA, type  =  NA, mine = TRUE,
   if (is.na(type))
     type <- details$defined_type
 
-  base <- "http://api.figshare.com/v1"
+  base <- "https://api.figshare.com/v1"
   method <- paste("my_data/articles", article_id, sep = "/")
   request <- paste(base, method, sep = "/")
   meta <- jsonlite::toJSON(list("title" = title,

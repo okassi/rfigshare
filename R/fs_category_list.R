@@ -2,13 +2,13 @@
 #'
 #' @export
 #' @return a table of all the categories
-#' @references http://api.figshare.com
+#' @references https://api.figshare.com
 #' @param debug enable debugging
 #' @examples \dontrun{
 #' fs_categories_list()
 #' }
 fs_category_list <- function(debug = FALSE){
-    response <- GET("http://api.figshare.com/v1/categories")
+    response <- GET("https://api.figshare.com/v1/categories")
     if(debug | response$status_code != 200)
       response
     else{

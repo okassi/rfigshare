@@ -14,7 +14,7 @@
 #' @return sets your token as an env variable for the current R session,
 #' returns nothing
 #' @author Carl Boettiger \email{cboettig@@gmail.com}
-#' @references http://api.figshare.com
+#' @references https://api.figshare.com
 #' @examples \dontrun{
 #' fs_auth("aasdfasfasdfasdfasfasfds")
 #' }

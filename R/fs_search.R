@@ -39,7 +39,7 @@
 #' @param ... curl options passed on to [httr::POST()]
 #' @return output of PUT request (invisibly)
 #' @seealso [fs_auth()] [fs_browse()]
-#' @references \url{http://api.figshare.com/docs/howto.html#q-search}
+#' @references \url{https://api.figshare.com/docs/howto.html#q-search}
 #' @examples \dontrun{
 #' # set your auth token, see ?fs_auth for more info
 #' # fs_auth("your token")

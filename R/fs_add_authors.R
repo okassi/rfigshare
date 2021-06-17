@@ -116,7 +116,7 @@ fs_author_ids <- function(authors, session = fs_get_auth(), graphics=FALSE){
 #' [fs_auth()]. If not provided, will attempt to load from cache.
 #' @keywords internal
 fs_add_author <- function(article_id, author_id, session = fs_get_auth()){
-  base <- "http://api.figshare.com/v1"
+  base <- "https://api.figshare.com/v1"
   method <- paste("my_data/articles", article_id, "authors", sep= "/")
   request = paste(base, method, sep="/")
   body <- jsonlite::toJSON(list("author_id"=author_id))

@@ -23,7 +23,7 @@
 #' @param ... curl options passed on to [httr::GET()]
 #' @return output of PUT request (invisibly)
 #' @seealso [fs_auth()]
-#' @references http://api.figshare.com/docs/howto.html#q-search
+#' @references https://api.figshare.com/docs/howto.html#q-search
 #' @examples \dontrun{
 #' fs_browse()
 #' fs_browse(mine = FALSE)
@@ -74,5 +74,5 @@ fs_browse <- function(mine = TRUE, public_only = FALSE, private_only = FALSE,
 
 
 ## All page requests fail
-## response <- GET("http://api.figshare.com/v1/my_data/articles&page=1",
+## response <- GET("https://api.figshare.com/v1/my_data/articles&page=1",
 ## config(token = fs_auth()))

@@ -7,13 +7,13 @@
 #' long as [fs_auth()] has been run.
 #' @return output of PUT request (invisibly)
 #' @seealso [fs_auth()]
-#' @references http://api.figshare.com
+#' @references https://api.figshare.com
 #' @export
 #' @examples \dontrun{
 #' fs_make_private(123)
 #' }
 fs_make_private <- function(article_id, session = fs_get_auth()){
-  base <- "http://api.figshare.com/v1"
+  base <- "https://api.figshare.com/v1"
   method <- paste("my_data/articles", article_id,
                   "action/make_private", sep = "/")
     request = paste(base, method, sep = "/")

@@ -11,7 +11,7 @@
 #' @param debug return PUT results visibly?
 #' @return output of PUT request (invisibly)
 #' @seealso [fs_auth()]
-#' @references http://api.figshare.com
+#' @references https://api.figshare.com
 #' @examples \dontrun{
 #' fs_add_categories(138, "Ecology")
 #' }
@@ -27,7 +27,7 @@ fs_add_categories <- function(article_id, category_id,
     category_id <- fs_cat_to_id(category_id)
   }
 
-  base <- "http://api.figshare.com/v1"
+  base <- "https://api.figshare.com/v1"
   method <- paste("my_data/articles", article_id, "categories", sep = "/")
   request <- paste(base, method, sep = "/")
 
@@ -51,11 +51,11 @@ fs_add_categories <- function(article_id, category_id,
 #' @author Edmund Hart \email{edmund.m.hart@@gmail.com}
 #' @param category_id Must be a valid category string, regardless of case
 #' @return a vector of integers corresponding to valid figshare categories
-#' @references \url{http://api.figshare.com}
+#' @references \url{https://api.figshare.com}
 fs_cat_to_id <- function(category_id){
   if(!exists("cat_names")) {
     cat_names <- jsonlite::fromJSON(
-      cont(GET("http://api.figshare.com/v1/categories"))
+      cont(GET("https://api.figshare.com/v1/categories"))
     )
   }
   name_db <- ldply(cat_names$items, data.frame)

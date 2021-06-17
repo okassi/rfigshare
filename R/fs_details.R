@@ -30,7 +30,7 @@ fs_details <-
       method <- paste("account/articles", article_id, sep = "/")
     } else if(!mine) {
       # v1 did not provide version info
-      base <- "http://api.figshare.com/v2"
+      base <- "https://api.figshare.com/v2"
       method <- paste("articles", article_id, sep = "/")
     }
 

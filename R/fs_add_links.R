@@ -12,9 +12,9 @@
 #' @param debug logical, should function return details of PUT request?
 #' @return output of PUT request (invisibly)
 #' @seealso [fs_auth()]
-#' @references http://api.figshare.com
+#' @references https://api.figshare.com
 #' @examples \dontrun{
-#' fs_add_links(138, list("http://carlboettiger.info", "http://ropensci.org"))
+#' fs_add_links(138, list("https://carlboettiger.info", "https://ropensci.org"))
 #' }
 fs_add_links <-
 function(article_id, link, session = fs_get_auth(), debug = FALSE){
@@ -23,7 +23,7 @@ function(article_id, link, session = fs_get_auth(), debug = FALSE){
     link <- unlist(link)
   }
 
-  base <- "http://api.figshare.com/v1"
+  base <- "https://api.figshare.com/v1"
   method <- paste("my_data/articles", article_id, "links", sep= "/")
   request <- paste(base, method, sep = "/")
 

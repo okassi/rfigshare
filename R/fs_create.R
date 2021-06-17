@@ -22,7 +22,7 @@
 #' @param ... curl options passed on to [httr::POST()]
 #' @return article id
 #' @seealso [fs_auth()], [fs_upload()]
-#' @references http://api.figshare.com
+#' @references https://api.figshare.com
 #' @examples \dontrun{
 #' # set your auth token, see ?fs_auth for more info
 #' # fs_auth("your token")

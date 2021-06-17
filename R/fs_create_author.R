@@ -8,7 +8,7 @@
 #' @param debug return PUT request visibly?
 #' @return author ID numbers
 #' @seealso [fs_auth()]
-#' @references http://api.figshare.com
+#' @references https://api.figshare.com
 #' @export
 #' @examples \dontrun{
 #' fs_create_author(full_name = "Benjamin Franklin")

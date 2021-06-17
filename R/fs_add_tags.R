@@ -6,7 +6,7 @@
 #' @param session the authentication credentials from [fs_auth()]
 #' @return output of PUT request (invisibly)
 #' @seealso [fs_auth()]
-#' @references http://api.figshare.com
+#' @references https://api.figshare.com
 #' @export
 #' @keywords internal
 #' @examples \dontrun{
@@ -17,7 +17,7 @@ fs_add_tags <-
     if(is.list(tag)){
       tag <- unlist(tag)
     }
-    base <- "http://api.figshare.com/v1"
+    base <- "https://api.figshare.com/v1"
     method <- paste("my_data/articles", article_id, "tags", sep = "/")
     request <- paste(base, method, sep="/")
     for(i in 1:length(tag)){

@@ -4,7 +4,7 @@
 #' @author Carl Boettiger \email{cboettig@@gmail.com}
 #' @param object the output of a search
 #' @return a list of article id numbers
-#' @references http://api.figshare.com
+#' @references https://api.figshare.com
 #' @examples \dontrun{
 #' # figshare_category()
 #'

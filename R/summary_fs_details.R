@@ -3,7 +3,7 @@
 #' @export
 #' @author Edmund Hart \email{edmund.m.hart@@gmail.com}
 #' @param fs_details_obj object
-#' @references http://api.figshare.com
+#' @references https://api.figshare.com
 #' @examples \dontrun{
 #' fs_auth()
 #' my_article <- fs_details("138")

@@ -36,7 +36,7 @@
 #'   authors=c("Karthik Ram", "Scott Chamberlain"),
 #'   tags=c("ecology", "openscience"),
 #'   categories="Ecology",
-#'   links="http://ropensci.org",
+#'   links="https://ropensci.org",
 #'   files="mtcars.csv",
 #'   visibility="private"
 #' )

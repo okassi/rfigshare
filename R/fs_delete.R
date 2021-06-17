@@ -11,7 +11,7 @@
 #' @param debug display return value of request?
 #' @return output of DELETE request (invisibly)
 #' @seealso [fs_auth()]
-#' @references http://api.figshare.com
+#' @references https://api.figshare.com
 
 #' @export
 #' @examples \dontrun{
