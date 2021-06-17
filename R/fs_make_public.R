@@ -21,10 +21,13 @@
 #' fs_make_public(123)
 #' }
 fs_make_public <- function(article_id, session = fs_get_auth()){
-  base <- "https://api.figshare.com/v1"
-  method <- paste("my_data/articles", article_id, "action/make_public", sep="/")
+  base <- "https://api.figshare.com/v2"
+  method <- paste("account/articles", article_id, "publish", sep="/")
     request = paste(base, method, sep="/")
   httr::POST(request, config(token = session))
 }
 
 
+
+
+https://api.figshare.com/v2/account/articles/3761562/publish
