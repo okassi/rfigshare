@@ -26,8 +26,3 @@ fs_make_public <- function(article_id, session = fs_get_auth()){
     request = paste(base, method, sep="/")
   httr::POST(request, config(token = session))
 }
-
-
-
-
-https://api.figshare.com/v2/account/articles/3761562/publish
